@@ -23,8 +23,7 @@ const defaultState: State = {
   tasks: ["eat", "swim", "study", "play-games"]
 };
 
-const { StateProvider, useStateHook } =
-  initStateHook < State > defaultState({ defaultState });
+const { StateProvider, useStateHook } = initStateHook({ defaultState });
 
 export { StateProvider, useStateHook };
 ```
