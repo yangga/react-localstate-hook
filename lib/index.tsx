@@ -1,5 +1,10 @@
 import React from "react";
 
+export type TypeUseStateHook<State> = () => [
+  State,
+  <Key extends keyof State>(state: State | Pick<State, Key> | null) => void
+];
+
 type InitParam<State> = {
   defaultState: State;
 };
